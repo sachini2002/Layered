@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Book" pageWidth="420" pageHeight="500" columnWidth="380" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a3235eea-0de7-4746-9212-d75559e44588">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="bookingID" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+    b.Booking_id,
+    b.Room_id,
+    b.Package_id,
+    c.Name AS Customer_name,
+    c.Contact AS Customer_contact,
+    c.Address AS Customer_address,
+    p.Payment_id,
+    p.Date AS Payment_date,
+    p.Method AS Payment_method,
+    p.Amount AS Payment_amount
+FROM
+    Booking b
+LEFT JOIN
+    Customer c ON b.Customer_id = c.Customer_id
+LEFT JOIN
+    Payment p ON b.Booking_id = p.Booking_id
+    where b.Booking_id = $P{bookingID}]]>
+	</queryString>
+	<field name="Booking_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Booking_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Booking_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Booking"/>
+	</field>
+	<field name="Room_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Room_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Room_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Booking"/>
+	</field>
+	<field name="Package_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Package_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Package_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Booking"/>
+	</field>
+	<field name="Customer_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Customer_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Customer"/>
+	</field>
+	<field name="Customer_contact" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Contact"/>
+		<property name="com.jaspersoft.studio.field.label" value="Customer_contact"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Customer"/>
+	</field>
+	<field name="Customer_address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Address"/>
+		<property name="com.jaspersoft.studio.field.label" value="Customer_address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Customer"/>
+	</field>
+	<field name="Payment_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Payment_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Payment_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<field name="Payment_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Payment_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<field name="Payment_method" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Method"/>
+		<property name="com.jaspersoft.studio.field.label" value="Payment_method"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<field name="Payment_amount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="Payment_amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payment"/>
+	</field>
+	<group name="Booking_id">
+		<groupExpression><![CDATA[$F{Booking_id}]]></groupExpression>
+	</group>
+	<group name="Room_id">
+		<groupExpression><![CDATA[$F{Room_id}]]></groupExpression>
+	</group>
+	<group name="Package_id">
+		<groupExpression><![CDATA[$F{Package_id}]]></groupExpression>
+	</group>
+	<group name="Customer_name">
+		<groupExpression><![CDATA[$F{Customer_name}]]></groupExpression>
+	</group>
+	<group name="Customer_contact">
+		<groupExpression><![CDATA[$F{Customer_contact}]]></groupExpression>
+	</group>
+	<group name="Customer_address">
+		<groupExpression><![CDATA[$F{Customer_address}]]></groupExpression>
+	</group>
+	<group name="Payment_id">
+		<groupExpression><![CDATA[$F{Payment_id}]]></groupExpression>
+	</group>
+	<group name="Payment_date">
+		<groupExpression><![CDATA[$F{Payment_date}]]></groupExpression>
+	</group>
+	<group name="Payment_method">
+		<groupExpression><![CDATA[$F{Payment_method}]]></groupExpression>
+	</group>
+	<group name="Payment_amount">
+		<groupExpression><![CDATA[$F{Payment_amount}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="2" width="358" height="30" uuid="2176a114-aa6f-4fb6-8fb9-f17747d3b219"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Diya Ulpatha Tea Garden Resort ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="30" width="195" height="30" uuid="d158999b-ac93-420b-a666-3e7e140e0c1e"/>
+				<text><![CDATA[No 23/ Matugama Gunnepana ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="47" width="195" height="30" uuid="bebd8f0f-7409-4827-8c6b-449c0d820698"/>
+				<text><![CDATA[0771834421 / 0765432345]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="66" width="257" height="30" uuid="dcd258c1-da0a-4c08-ac80-fb8a230e08f2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Welcome to diya ulpatha tea garden resort ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="214" splitType="Stretch">
+			<textField>
+				<reportElement x="130" y="29" width="100" height="30" uuid="c1a9bdae-b2b9-45a0-b463-f0d8c2d8aa9e"/>
+				<textFieldExpression><![CDATA[$P{bookingID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="30" width="100" height="30" uuid="02a89187-a2d2-4cb1-8503-87928e7011ad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2d36cc9-2b6d-4583-bed9-cf1ffc5258e8"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Booking ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="70" width="100" height="30" uuid="41334ea7-98f6-47aa-ab27-103921005d8c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88412c83-acc0-420b-b3aa-8013b0b65245"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Customer_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="69" width="100" height="30" uuid="4d363b26-d570-4aaf-a2b9-02780ad4831a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="88412c83-acc0-420b-b3aa-8013b0b65245"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Name ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="110" width="100" height="30" uuid="3e6b9fda-7f79-458b-85cc-6f2be8d740ad"/>
+				<textFieldExpression><![CDATA[$F{Room_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="110" width="100" height="30" uuid="496822d9-0b7a-4a7c-b614-aaa0cf8325e5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Room ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="149" width="100" height="30" uuid="fd38b5b1-7d46-4d89-b8af-f93db03511cf"/>
+				<textFieldExpression><![CDATA[$F{Payment_amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="149" width="100" height="30" uuid="9987fd76-651a-4c57-bdf3-cce609b0b648"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="141" splitType="Stretch">
+			<staticText>
+				<reportElement x="146" y="30" width="107" height="30" uuid="f0ff02de-450c-4dd1-863f-a86b1095d13d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thanks you !]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

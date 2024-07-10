@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="631.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.classController.PaymentFormController">
+   <children>
+      <Label layoutX="63.0" layoutY="59.0" text="PaymentId">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPayId" layoutX="60.0" layoutY="87.0" onKeyReleased="#PaymentIDOnKey" prefHeight="42.0" prefWidth="262.0" stylesheets="@../css/Style.css" />
+      <Label layoutX="378.0" layoutY="58.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="677.0" layoutY="59.0" text="Method">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="152.0" text="BookingId">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="153.0" text="Amount">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="method" layoutX="677.0" layoutY="87.0" onKeyReleased="#MethodOnKey" prefHeight="42.0" prefWidth="262.0" stylesheets="@../css/Style.css" />
+      <TextField fx:id="date" layoutX="378.0" layoutY="86.0" onKeyReleased="#DateOnKey" prefHeight="42.0" prefWidth="262.0" stylesheets="@../css/Style.css" />
+      <TextField fx:id="amount" layoutX="61.0" layoutY="173.0" onDragDetected="#comboBookingOnAction" onKeyReleased="#AmountOnKey" prefHeight="42.0" prefWidth="262.0" stylesheets="@../css/Style.css" />
+      <TableView fx:id="tblBooking" layoutX="62.0" layoutY="228.0" prefHeight="301.0" prefWidth="899.0" stylesheets="@../css/Style.css">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="165.0" text="PaymentId" />
+          <TableColumn fx:id="coldate" prefWidth="171.0" text="BookingId" />
+            <TableColumn fx:id="colmethod" prefWidth="231.33331298828125" text="Method" />
+            <TableColumn fx:id="colamount" prefWidth="187.66668701171875" text="Amount" />
+            <TableColumn fx:id="colBid" prefWidth="169.6666259765625" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="SavePay" layoutX="441.0" layoutY="546.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="53.0" prefWidth="110.0" styleClass="Save" stylesheets="@../css/Style.css" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Updatepay" layoutX="560.0" layoutY="546.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="53.0" prefWidth="134.0" stylesheets="@../css/Style.css" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Deletepay" layoutX="702.0" layoutY="544.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="53.0" prefWidth="134.0" stylesheets="@../css/Style.css" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Clearpay" layoutX="845.0" layoutY="543.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="53.0" prefWidth="119.0" stylesheets="@../css/Style.css" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbBooking" layoutX="379.0" layoutY="175.0" onAction="#comboBookingOnAction" prefHeight="42.0" prefWidth="261.0" stylesheets="@../css/Style.css" />
+      <Label layoutX="419.0" layoutY="-7.0" text="Payment Form">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9868420958518982" green="0.6670321822166443" blue="0.027412280440330505" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

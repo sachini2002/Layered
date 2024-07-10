@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rooNode" prefHeight="586.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.classController.RoomFormController">
+   <children>
+      <Label layoutX="39.0" layoutY="76.0" text="RoomId">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="373.0" layoutY="73.0" text="Room No">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="697.0" layoutY="74.0" text="Type">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="376.0" layoutY="160.0" text="Status">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="160.0" prefHeight="21.0" prefWidth="73.0" text="Rate">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Id" layoutX="38.0" layoutY="100.0" onAction="#SearchOnACTION" onKeyReleased="#RoomIDOnKey" prefHeight="42.0" prefWidth="232.0" stylesheets="@../css/Style.css" />
+      <TextField fx:id="type" layoutX="694.0" layoutY="102.0" onKeyReleased="#TypeOnKey" prefHeight="42.0" prefWidth="232.0" stylesheets="@../css/Style.css" />
+      <TextField fx:id="number" layoutX="372.0" layoutY="100.0" onKeyReleased="#RoomNoOnKey" prefHeight="42.0" prefWidth="232.0" stylesheets="@../css/Style.css" />
+      <TextField fx:id="status" layoutX="373.0" layoutY="180.0" onKeyReleased="#StatusOnKey" prefHeight="42.0" prefWidth="232.0" stylesheets="@../css/Style.css" />
+      <TextField fx:id="rate" layoutX="38.0" layoutY="180.0" onKeyReleased="#RateOnKey" prefHeight="42.0" prefWidth="232.0" stylesheets="@../css/Style.css" />
+      <TableView fx:id="tblRoom" layoutX="39.0" layoutY="233.0" prefHeight="285.0" prefWidth="894.0" stylesheets="@../css/Style.css">
+        <columns>
+          <TableColumn fx:id="collRoomId" prefWidth="147.33334350585938" text="RoomId" />
+          <TableColumn fx:id="collRoomNo" prefWidth="109.66665649414062" text="Room No" />
+            <TableColumn fx:id="collType" prefWidth="223.66665649414062" text="Type" />
+            <TableColumn fx:id="collStatus" prefWidth="197.66665649414062" text="Status" />
+            <TableColumn fx:id="collRate" prefWidth="213.0" text="Rate" />
+        </columns>
+      </TableView>
+      <Button fx:id="Saveroo" layoutX="416.0" layoutY="525.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="53.0" prefWidth="113.0" stylesheets="@../css/Style.css" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Updateroo" layoutX="538.0" layoutY="525.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="53.0" prefWidth="134.0" stylesheets="@../css/Style.css" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Clearroo" layoutX="822.0" layoutY="525.0" mnemonicParsing="false" onAction="#ClearOnAction" prefHeight="53.0" prefWidth="113.0" stylesheets="@../css/Style.css" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Deleteroo" layoutX="680.0" layoutY="526.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="53.0" prefWidth="134.0" stylesheets="@../css/Style.css" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="417.0" layoutY="1.0" text="Room Form">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9868420958518982" green="0.6670321822166443" blue="0.027412280440330505" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

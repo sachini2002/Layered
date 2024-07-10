@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.classController.Dashboard1FormController">
+   <children>
+      <Label layoutX="421.0" layoutY="17.0" text="DASHBOARD">
+         <font>
+            <Font name="DejaVu Serif Bold Italic" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.6166666746139526" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ImageView fitHeight="341.0" fitWidth="446.0" layoutX="41.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Bar-Chart-Vector-PNG-Image-File.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="341.0" fitWidth="446.0" layoutX="546.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/pie-chart-149727.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="651.0" layoutY="531.0" text="Visited Country ">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.5333333611488342" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="637.0" layoutY="223.0" text="Russia 55%">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="781.0" layoutY="293.0" prefHeight="25.0" prefWidth="155.0" text="Sri lanka 10%">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="402.0" prefHeight="25.0" prefWidth="155.0" text="Sri lanka 15%">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="571.0" layoutY="372.0" prefHeight="25.0" prefWidth="112.0" text="USA 10%">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="559.0" layoutY="316.0" prefHeight="19.0" prefWidth="105.0" text="AUS 10%">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="528.0" text="Revenue UP">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.5333333611488342" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

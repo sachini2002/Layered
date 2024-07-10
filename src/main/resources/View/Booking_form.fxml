@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNde" prefHeight="567.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.classController.BookingFormController">
+   <children>
+      <Label layoutX="130.0" layoutY="73.0" text="Booking ID ">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookingId" layoutX="129.0" layoutY="103.0" onKeyReleased="#BookingIDOnKey" prefHeight="43.0" prefWidth="276.0">
+         <stylesheets>
+            <URL value="@../css/dashcss.css" />
+            <URL value="@../css/Style.css" />
+         </stylesheets></TextField>
+      <Label layoutX="619.0" layoutY="80.0" text="Room_id">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbRoomId" layoutX="616.0" layoutY="106.0" onAction="#cmbRoomOnAction" prefHeight="43.0" prefWidth="276.0" />
+      <ComboBox fx:id="cmbPackage" layoutX="127.0" layoutY="184.0" onAction="#cmbPackageOnAction" prefHeight="43.0" prefWidth="276.0" />
+      <ComboBox fx:id="cmbCustomerId" layoutX="617.0" layoutY="186.0" onAction="#cmbCustomerOnAction" prefHeight="43.0" prefWidth="276.0" />
+      <Label layoutX="129.0" layoutY="158.0" text="Package Id">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="158.0" text="Customer ID">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblbooking" layoutX="114.0" layoutY="244.0" prefHeight="225.0" prefWidth="797.0" stylesheets="@../css/Style.css">
+        <columns>
+          <TableColumn fx:id="bookingcol" prefWidth="153.33334350585938" text="ID" />
+          <TableColumn fx:id="roomcol" prefWidth="201.66665649414062" text="Package_Id" />
+            <TableColumn fx:id="packagecol" prefWidth="241.6666259765625" text="Room_Id" />
+            <TableColumn fx:id="customercol" prefWidth="205.3333740234375" text="Customer_Id" />
+        </columns>
+      </TableView>
+      <Button fx:id="Savebooking" layoutX="194.0" layoutY="485.0" mnemonicParsing="false" onAction="#bookingOnAction" prefHeight="53.0" prefWidth="244.0" stylesheets="@../css/Style.css" text="Place Booking">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Savebooking1" layoutX="609.0" layoutY="486.0" mnemonicParsing="false" onAction="#reportOnAction" prefHeight="53.0" prefWidth="244.0" stylesheets="@../css/Style.css" text="Get your Rport ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="420.0" layoutY="6.0" text="Booking Form">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9868420958518982" green="0.6670321822166443" blue="0.027412280440330505" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

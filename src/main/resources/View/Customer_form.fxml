@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rooNode" prefHeight="613.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.classController.CustomerFormController">
+   <children>
+      <TextField fx:id="txtCustomerId" layoutX="87.0" layoutY="95.0" onAction="#txtSearchOnAction" onKeyReleased="#OnkeyReleased" prefHeight="42.0" prefWidth="285.0" stylesheets="@../css/Style.css" />
+      <Label layoutX="91.0" layoutY="63.0" onKeyReleased="#IDOnKeyReleased" text="CustomerId">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerName" layoutX="569.0" layoutY="98.0" onKeyReleased="#NameOnKey" prefHeight="42.0" prefWidth="285.0" stylesheets="@../css/Style.css" />
+      <Label layoutX="571.0" layoutY="66.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="160.0" text="Contact ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerTel" layoutX="88.0" layoutY="189.0" onKeyReleased="#ContactOnKey" prefHeight="42.0" prefWidth="285.0" stylesheets="@../css/Style.css" />
+      <Label layoutX="568.0" layoutY="161.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="495.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomer" layoutX="84.0" layoutY="273.0" prefHeight="231.0" prefWidth="853.0" stylesheets="@../css/Style.css">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="156.66665649414062" text="CustomerId" />
+          <TableColumn fx:id="colName" prefWidth="244.33334350585938" text="Name" />
+            <TableColumn fx:id="colTel" prefWidth="238.0" text="Contact" />
+            <TableColumn fx:id="colAddress" prefWidth="215.66665649414062" text="Address" />
+        </columns>
+      </TableView>
+      <Button fx:id="Savecu" layoutX="405.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="49.0" prefWidth="122.0" stylesheets="@../css/Style.css" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Updatecu" layoutX="536.0" layoutY="531.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="53.0" prefWidth="136.0" styleClass="Update" stylesheets="@../css/Style.css" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="Deletecu" layoutX="681.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="53.0" prefWidth="129.0" stylesheets="@../css/Style.css" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="Clearcu" layoutX="817.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="49.0" prefWidth="122.0" stylesheets="@../css/Style.css" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="txtCustomerAddress" layoutX="570.0" layoutY="187.0" onKeyReleased="#AddressOnKey" prefHeight="42.0" prefWidth="285.0" stylesheets="@../css/Style.css" />
+      <Label layoutX="358.0" layoutY="-2.0" text="Customer Form">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9868420958518982" green="0.6670321822166443" blue="0.027412280440330505" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

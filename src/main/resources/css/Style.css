@@ -1,0 +1,1018 @@
+#Savestart {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from red to dark red */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: #ffff; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Savestart:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark red to darker red on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#LoginBtn {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#LoginBtn:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Username,#Password,#UserId,#UserName,#Email {
+    -fx-background-color: transparent; /* Set background color to transparent */
+    -fx-border-width: 0 0 2px 0; /* No border on top, right, and left; 2px solid red border bottom */
+    -fx-border-color: #C28E30;
+    -fx-border-radius: 0; /* No border radius */
+    -fx-text-fill: Black; /* White text color */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 13px; /* Font size 20 */
+}
+
+.root {
+    -fx-background-color: linear-gradient(to top, #0000FF, #ADD8E6);
+}
+
+#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerTel {
+    -fx-background-color: transparent; /* Set background color to transparent */
+    -fx-border-width: 0 0 2px 0; /* No border on top, right, and left; 2px solid red border bottom */
+    -fx-border-color: #C28E30;
+    -fx-border-radius: 0; /* No border radius */
+    -fx-text-fill: Black; /* White text color */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 15px; /* Font size 20 */
+}
+
+#tblCustomer {
+    -fx-background-color: white;
+    -fx-background-radius: 5px; /* Add border radius */
+    -fx-border-width: 1px; /* Add border width */
+    -fx-border-color: black; /* Add border color */
+}
+
+#tblCustomer .column-header-background,
+#tblCustomer .column-header,
+#tblCustomer .filler {
+    -fx-background-color: #C28E30; /* Blue color for column headers */
+}
+
+#tblCustomer .column-header .label {
+    -fx-text-fill: white; /* White text color for column headers */
+    -fx-font-weight: bold;
+}
+
+#tblCustomer .table-row-cell {
+    -fx-background-color: white;
+}
+
+#tblCustomer .table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+#tblCustomer .table-row-cell:selected {
+    -fx-background-color: #cceeff;
+}
+
+/* Apply blue color to middle columns */
+#tblCustomer .table-cell {
+    -fx-background-color: white; /* Default background color */
+}
+
+/* Apply blue color to details in the table */
+.details-cell {
+    -fx-background-color: #C28E30; /* Blue color for details */
+}
+#Savecu {
+    -fx-background-color: linear-gradient(to bottom, #66bb6a, #388e3c); /* Gradient from green to dark green */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Savecu:hover {
+    -fx-background-color: linear-gradient(to bottom, #388e3c, #1b5e20); /* Gradient from dark green to darker green on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Updatecu {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #0D47A1); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Updatecu:hover {
+    -fx-background-color: linear-gradient(to bottom, #0D47A1, #002171); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Deletecu {
+    -fx-background-color: linear-gradient(to bottom, #EF5350, #B71C1C); /* Gradient from red to dark red */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Deletecu:hover {
+    -fx-background-color: linear-gradient(to bottom, #B71C1C, #7F0000); /* Gradient from dark red to darker red on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Clearcu {
+    -fx-background-color: linear-gradient(to bottom, #616161, #212121); /* Gradient from dark gray to black */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Clearcu:hover {
+    -fx-background-color: linear-gradient(to bottom, #424242, #000000); /* Gradient from darker gray to black on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+
+#txtEmployeeId,#txtEmployeeName,#txtAddress,#txtSalary,#txtType,#txtAvailability {
+    -fx-background-color: transparent; /* Set background color to transparent */
+    -fx-border-width: 0 0 2px 0; /* No border on top, right, and left; 2px solid red border bottom */
+    -fx-border-color: #C28E30;
+    -fx-border-radius: 0; /* No border radius */
+    -fx-text-fill: Black; /* White text color */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 15px; /* Font size 20 */
+}
+
+#txtPackageId,#txtPackageName,#txtDescription,#txtPrice {
+    -fx-background-color: transparent; /* Set background color to transparent */
+    -fx-border-width: 0 0 2px 0; /* No border on top, right, and left; 2px solid red border bottom */
+    -fx-border-color: #C28E30;
+    -fx-border-radius: 0; /* No border radius */
+    -fx-text-fill: Black; /* White text color */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 15px; /* Font size 20 */
+}
+
+#Saveem {
+    -fx-background-color: linear-gradient(to bottom, #66bb6a, #388e3c); /* Gradient from green to dark green */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Saveem:hover {
+    -fx-background-color: linear-gradient(to bottom, #388e3c, #1b5e20); /* Gradient from dark green to darker green on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Updateem {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #0D47A1); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Updateem:hover {
+    -fx-background-color: linear-gradient(to bottom, #0D47A1, #002171); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Deleteem {
+    -fx-background-color: linear-gradient(to bottom, #EF5350, #B71C1C); /* Gradient from red to dark red */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Deleteem:hover {
+    -fx-background-color: linear-gradient(to bottom, #B71C1C, #7F0000); /* Gradient from dark red to darker red on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Clearem {
+    -fx-background-color: linear-gradient(to bottom, #616161, #212121); /* Gradient from dark gray to black */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Clearem:hover {
+    -fx-background-color: linear-gradient(to bottom, #424242, #000000); /* Gradient from darker gray to black on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#TblEmployee {
+    -fx-background-color: white;
+    -fx-background-radius: 5px; /* Add border radius */
+    -fx-border-width: 1px; /* Add border width */
+    -fx-border-color: black; /* Add border color */
+}
+
+#TblEmployee .column-header-background,
+#TblEmployee .column-header,
+#TblEmployee .filler {
+    -fx-background-color: #C28E30; /* Blue color for column headers */
+}
+
+#TblEmployee .column-header .label {
+    -fx-text-fill: white; /* White text color for column headers */
+    -fx-font-weight: bold;
+}
+
+#TblEmployee .table-row-cell {
+    -fx-background-color: white;
+}
+
+#TblEmployee .table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+#TblEmployee .table-row-cell:selected {
+    -fx-background-color: #cceeff;
+}
+
+/* Apply blue color to middle columns */
+#TblEmployee .table-cell {
+    -fx-background-color: white; /* Default background color */
+}
+
+/* Apply blue color to details in the table */
+.details-cell {
+    -fx-background-color: #C28E30; /* Blue color for details */
+}
+
+#TblPackage {
+    -fx-background-color: white;
+    -fx-background-radius: 5px; /* Add border radius */
+    -fx-border-width: 1px; /* Add border width */
+    -fx-border-color: black; /* Add border color */
+}
+
+#TblPackage .column-header-background,
+#TblPackage .column-header,
+#TblPackage .filler {
+    -fx-background-color: #C28E30; /* Blue color for column headers */
+}
+
+#TblPackage .column-header .label {
+    -fx-text-fill: white; /* White text color for column headers */
+    -fx-font-weight: bold;
+}
+
+#TblPackage .table-row-cell {
+    -fx-background-color: white;
+}
+
+#TblPackage .table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+#TblPackage .table-row-cell:selected {
+    -fx-background-color: #cceeff;
+}
+
+/* Apply blue color to middle columns */
+#TblPackage .table-cell {
+    -fx-background-color: white; /* Default background color */
+}
+
+/* Apply blue color to details in the table */
+.details-cell {
+    -fx-background-color: #C28E30; /* Blue color for details */
+}
+
+
+
+#Savepackage {
+    -fx-background-color: linear-gradient(to bottom, #66bb6a, #388e3c); /* Gradient from green to dark green */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Savepackage:hover {
+    -fx-background-color: linear-gradient(to bottom, #388e3c, #1b5e20); /* Gradient from dark green to darker green on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Updatepackage {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #0D47A1); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Updatepackage:hover {
+    -fx-background-color: linear-gradient(to bottom, #0D47A1, #002171); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Deletepackage {
+    -fx-background-color: linear-gradient(to bottom, #EF5350, #B71C1C); /* Gradient from red to dark red */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Deletepackage:hover {
+    -fx-background-color: linear-gradient(to bottom, #B71C1C, #7F0000); /* Gradient from dark red to darker red on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Clearpackage {
+    -fx-background-color: linear-gradient(to bottom, #616161, #212121); /* Gradient from dark gray to black */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Clearpackage:hover {
+    -fx-background-color: linear-gradient(to bottom, #424242, #000000); /* Gradient from darker gray to black on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#txtPayId,#date,#method,#amount,#cmbBooking {
+    -fx-background-color: transparent; /* Set background color to transparent */
+    -fx-border-width: 0 0 2px 0; /* No border on top, right, and left; 2px solid red border bottom */
+    -fx-border-color: #C28E30;
+    -fx-border-radius: 0; /* No border radius */
+    -fx-text-fill: Black; /* White text color */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 15px; /* Font size 20 */
+}
+
+#tblBooking {
+    -fx-background-color: white;
+    -fx-background-radius: 5px; /* Add border radius */
+    -fx-border-width: 1px; /* Add border width */
+    -fx-border-color: black; /* Add border color */
+}
+
+#tblBooking .column-header-background,
+#tblBooking .column-header,
+#tblBooking .filler {
+    -fx-background-color: #C28E30; /* Blue color for column headers */
+}
+
+#tblBooking .column-header .label {
+    -fx-text-fill: white; /* White text color for column headers */
+    -fx-font-weight: bold;
+}
+
+#tblBooking .table-row-cell {
+    -fx-background-color: white;
+}
+
+#tblBooking .table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+#tblBooking .table-row-cell:selected {
+    -fx-background-color: #cceeff;
+}
+
+/* Apply blue color to middle columns */
+#tblBooking .table-cell {
+    -fx-background-color: white; /* Default background color */
+}
+
+/* Apply blue color to details in the table */
+.details-cell {
+    -fx-background-color: #C28E30; /* Blue color for details */
+}
+
+
+
+#SavePay {
+    -fx-background-color: linear-gradient(to bottom, #66bb6a, #388e3c); /* Gradient from green to dark green */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#SavePay:hover {
+    -fx-background-color: linear-gradient(to bottom, #388e3c, #1b5e20); /* Gradient from dark green to darker green on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Updatepay {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #0D47A1); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Updatepay:hover {
+    -fx-background-color: linear-gradient(to bottom, #0D47A1, #002171); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Deletepay {
+    -fx-background-color: linear-gradient(to bottom, #EF5350, #B71C1C); /* Gradient from red to dark red */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Deletepay:hover {
+    -fx-background-color: linear-gradient(to bottom, #B71C1C, #7F0000); /* Gradient from dark red to darker red on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Clearpay {
+    -fx-background-color: linear-gradient(to bottom, #616161, #212121); /* Gradient from dark gray to black */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Clearpay:hover {
+    -fx-background-color: linear-gradient(to bottom, #424242, #000000); /* Gradient from darker gray to black on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+
+#Id,#number,#type,#rate,#status,#bookingId {
+    -fx-background-color: transparent; /* Set background color to transparent */
+    -fx-border-width: 0 0 2px 0; /* No border on top, right, and left; 2px solid red border bottom */
+    -fx-border-color: #C28E30;
+    -fx-border-radius: 0; /* No border radius */
+    -fx-text-fill: Black; /* White text color */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-font-size: 15px; /* Font size 20 */
+}
+
+#tblRoom {
+    -fx-background-color: white;
+    -fx-background-radius: 5px; /* Add border radius */
+    -fx-border-width: 1px; /* Add border width */
+    -fx-border-color: black; /* Add border color */
+}
+
+#tblRoom .column-header-background,
+#tblRoom .column-header,
+#tblRoom .filler {
+    -fx-background-color: #C28E30; /* Blue color for column headers */
+}
+
+#tblRoom .column-header .label {
+    -fx-text-fill: white; /* White text color for column headers */
+    -fx-font-weight: bold;
+}
+
+#tblRoom .table-row-cell {
+    -fx-background-color: white;
+}
+
+#tblRoom .table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+#tblRoom .table-row-cell:selected {
+    -fx-background-color: #cceeff;
+}
+
+/* Apply blue color to middle columns */
+#tblRoom .table-cell {
+    -fx-background-color: white; /* Default background color */
+}
+
+/* Apply blue color to details in the table */
+.details-cell {
+    -fx-background-color: #C28E30; /* Blue color for details */
+}
+
+
+
+#Saveroo {
+    -fx-background-color: linear-gradient(to bottom, #66bb6a, #388e3c); /* Gradient from green to dark green */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Saveroo:hover {
+    -fx-background-color: linear-gradient(to bottom, #388e3c, #1b5e20); /* Gradient from dark green to darker green on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Updateroo {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #0D47A1); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Updateroo:hover {
+    -fx-background-color: linear-gradient(to bottom, #0D47A1, #002171); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Deleteroo {
+    -fx-background-color: linear-gradient(to bottom, #EF5350, #B71C1C); /* Gradient from red to dark red */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Deleteroo:hover {
+    -fx-background-color: linear-gradient(to bottom, #B71C1C, #7F0000); /* Gradient from dark red to darker red on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#Clearroo {
+    -fx-background-color: linear-gradient(to bottom, #616161, #212121); /* Gradient from dark gray to black */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 12px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 12px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Clearroo:hover {
+    -fx-background-color: linear-gradient(to bottom, #424242, #000000); /* Gradient from darker gray to black on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 12px; /* Rounded border on hover */
+    -fx-background-radius: 12px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+
+#tblbooking {
+    -fx-background-color: white;
+    -fx-background-radius: 5px; /* Add border radius */
+    -fx-border-width: 1px; /* Add border width */
+    -fx-border-color: black; /* Add border color */
+}
+
+#tblbooking .column-header-background,
+#tblbooking .column-header,
+#tblbooking .filler {
+    -fx-background-color: #C28E30; /* Blue color for column headers */
+}
+
+#tblbooking .column-header .label {
+    -fx-text-fill: white; /* White text color for column headers */
+    -fx-font-weight: bold;
+}
+
+#tblbooking .table-row-cell {
+    -fx-background-color: white;
+}
+
+#tblbooking .table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+#tblbooking .table-row-cell:selected {
+    -fx-background-color: #cceeff;
+}
+
+/* Apply blue color to middle columns */
+#tblbooking .table-cell {
+    -fx-background-color: white; /* Default background color */
+}
+
+/* Apply blue color to details in the table */
+.details-cell {
+    -fx-background-color: #C28E30; /* Blue color for details */
+}
+
+
+
+#Savebooking {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Savebooking:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+
+#BackDash {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#BackDash:hover {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: white; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+
+}
+
+#Savebooking1 {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#Savebooking1:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+
+#registerButton {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#registerButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+
+#ChangePw {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 20px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#ChangePw:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+#go {
+    -fx-background-color: linear-gradient(to bottom, #C28E30, #C28E30); /* Gradient from blue to dark blue */
+    -fx-border-color: white; /* White border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-padding: 12px 24px; /* Padding */
+    -fx-font-size: 15px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-transition-duration: 0.4s; /* Transition duration */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-text-fill: white; /* White text */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); /* Text shadow */
+}
+
+#go:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient from dark blue to darker blue on hover */
+    -fx-text-fill: black; /* White text on hover */
+    -fx-border-color: white; /* White border on hover */
+    -fx-border-width: 2px; /* Border width on hover */
+    -fx-border-radius: 5px; /* Rounded border on hover */
+    -fx-background-radius: 5px; /* Rounded corners on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Enhanced text shadow on hover */
+}
+
+

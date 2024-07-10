@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.classController.DashBoardController">
+   <children>
+      <ImageView fitHeight="744.0" fitWidth="1450.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Screenshot%20from%202024-05-10%2010-56-26.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Customer" layoutX="31.0" layoutY="200.0" mnemonicParsing="false" onAction="#CutomerLogin" prefHeight="33.0" prefWidth="293.0" stylesheets="@../css/dashcss.css" text="Customer">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="bookingroon" layoutX="31.0" layoutY="431.0" mnemonicParsing="false" onAction="#BookingLogin" prefHeight="33.0" prefWidth="293.0" stylesheets="@../css/dashcss.css" text="Booking">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="Payment" layoutX="32.0" layoutY="351.0" mnemonicParsing="false" onAction="#paymentLogin" prefHeight="33.0" prefWidth="293.0" stylesheets="@../css/dashcss.css" text="Payment">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="Room" layoutX="29.0" layoutY="585.0" mnemonicParsing="false" onAction="#RoomLogin" prefHeight="33.0" prefWidth="293.0" stylesheets="@../css/dashcss.css" text="Room">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Label layoutX="89.0" layoutY="22.0" text="Dashboard">
+         <font>
+            <Font name="DejaVu Serif Bold" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9109507203102112" green="0.9736841917037964" blue="0.22088207304477692" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="BackDash" layoutX="1242.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="40.0" prefWidth="116.0" stylesheets="@../css/Style.css" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Package" layoutX="29.0" layoutY="508.0" mnemonicParsing="false" onAction="#PackageLogin" prefHeight="33.0" prefWidth="293.0" stylesheets="@../css/dashcss.css" text="Package">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="Employee" layoutX="32.0" layoutY="277.0" mnemonicParsing="false" onAction="#EmployeeLogin" prefHeight="33.0" prefWidth="293.0" stylesheets="@../css/dashcss.css" text="Employee">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <AnchorPane fx:id="CenterPane" layoutX="385.0" layoutY="44.0" prefHeight="586.0" prefWidth="1063.0" stylesheets="@../css/Style.css" />
+      <Button fx:id="Dash" layoutX="32.0" layoutY="128.0" mnemonicParsing="false" onAction="#DashOnControl" prefHeight="33.0" prefWidth="293.0" stylesheets="@../css/dashcss.css" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="87.0" layoutY="62.0" text="Welcome Sachini">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.8814814686775208" green="1.0" blue="0.1111111119389534" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
